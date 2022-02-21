@@ -1,0 +1,84 @@
+.Videobox{
+    flex: 8;
+    width: 100%;
+    background-color: white;
+     display:flex;
+}
+.videoDisplay{
+    flex: 6;
+    flex-shrink: 15;
+    background-color:white;
+   
+}
+.Sidebar{
+    flex: 2;
+    background-color:white;
+    
+}
+.video{
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 90%;
+    height: 70%;
+    max-height: 70vh;
+    margin: 1rem auto;
+}
+.description{
+    margin: 2rem 5.2rem;
+}
+.description h4{
+    font-weight: 500;
+    font-size: clamp(2rem,2.5vw,5rem);
+}
+.description p{
+    font-size:clamp(1rem,1.4vw,2.4rem);
+}
+.assignments{
+    font-size:90px;
+    margin: 2rem 5.2rem;
+}
+.Sidebar>h4{
+    font-size: clamp(1.8rem,2.2vw,6rem);
+    font-weight: 400;
+    margin-right: 0px;
+    margin-left: .3rem;
+    margin-top: .8rem;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+   
+    margin-top:2rem
+}
+
+@media screen and (max-width:1024px){
+    .Videobox{
+        flex-direction: column;
+        height: fit-content;
+        
+    }
+    .videoDisplay{
+        height: fit-content;
+    }
+    .video{
+        height: 70vh;
+        margin: 0px 0px;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .assignments{
+        color: blue;
+        font-size: clamp(3rem,3vw,30px);
+        margin: 2rem 2rem;
+    }
+    .description{
+        margin: 1rem 2rem;
+    }
+    .Sidebar>h4{
+        margin-left: 1.5rem;
+        font-size: clamp(2rem,4vw,6rem);
+    }
+}

@@ -1,0 +1,35 @@
+.Main{
+    width: 100%;
+    flex: 9;
+    min-height: fit-content;
+    background: url('https://wallpaperaccess.com/full/5205022.jpg') no-repeat center center/cover;
+} 
+
+.contentBox{
+   width: 85%;
+   height: 1000px;
+   min-height: 75%;
+   border: 0px solid #FAFAFA;
+   border-radius: 12px;
+   -webkit-box-shadow: 0 0 5px 2px grey;
+    -moz-box-shadow: 0 0 5px 2px grey;
+    box-shadow: 0 0 5px 2px grey;
+   margin: 3rem auto;
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   overflow-y: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .contentBox{
+        margin:0px ;
+        width: 100%;
+       border-radius: 0px;
+        height: fit-content;
+        -webkit-box-shadow: 0 0 0px 0px grey;
+       -moz-box-shadow: 0 0 0px 0px grey;
+         box-shadow: 0 0 0px 0px grey;
+    }
+
+  }
